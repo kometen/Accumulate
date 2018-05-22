@@ -9,6 +9,7 @@ public class AccumulateAmount {
 
     public static void main(String[] args) {
     	Integer ytd = 0; // Year To Date
+    	// <Unique identifier, Period (month), amount (numeric(19,3))>
         Table<String, Integer, Integer> tAmount = TreeBasedTable.create();
         
         tAmount.put("Formidling af viden", 5, 5);
@@ -19,6 +20,7 @@ public class AccumulateAmount {
         tAmount.put("Formidling af viden", 11, 11);
         tAmount.put("Motivering vha. podcast", 2, 2);
         tAmount.put("Formidling af viden", 3, 3);
+        tAmount.put("Formidling af viden", 6, 0);
         System.out.println("guava table: " + tAmount.size());
 
         for (String item : tAmount.rowKeySet()) {
