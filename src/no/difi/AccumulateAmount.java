@@ -26,6 +26,7 @@ public class AccumulateAmount {
         tAmount.put("Formidling af viden", 6, new Pair(new BigDecimal("0.0")));
         System.out.println("guava table: " + tAmount.size());
 
+        // Traverse and accumulate YTD.
         for (String item : tAmount.rowKeySet()) {
             System.out.println("guava rowKeySet(): " + item);
             ytd = BigDecimal.ZERO;
