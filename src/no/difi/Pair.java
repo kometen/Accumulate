@@ -1,22 +1,25 @@
 package no.difi;
 
+import java.math.BigDecimal;
+
 public class Pair {
     
-    private Integer amount;
-    private Integer YTDamount;
+    private BigDecimal amount;
+    private BigDecimal YTDAmount;
 
 
-    public Pair(Integer amount) {
+    public Pair(BigDecimal amount) {
         this.amount = amount;
     }
 
-    public Integer getYTDamount() {
-        return YTDamount;
+    public BigDecimal getYTDamount() {
+        return YTDAmount;
     }
-    public void setYTDamount(Integer yTDamount) {
-        YTDamount = yTDamount;
+
+    public void setYTDamount(BigDecimal YTDamount) {
+        this.YTDAmount = YTDamount;
     }
-    public Integer getAmount() {
+    public BigDecimal getAmount() {
         return amount;
     }
 
